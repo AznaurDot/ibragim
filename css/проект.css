@@ -1,0 +1,44 @@
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 7rem;
+}
+.about_item {
+    width: 300px;
+    background-color: aqua;
+    position: relative;
+}
+.about_img {
+    background: linear-gradient(#f38181, #fce);
+   
+}
+
+.about_item:hover .about_img{
+    opacity: .8;
+}
+
+.about_item .about_img img{
+    display: block;
+}
+
+.about_item:hover .about_img{
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.about_text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.about_item:hover .about_text{
+    opacity: 1;
+}
+
+
+
+
